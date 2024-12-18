@@ -1,12 +1,14 @@
 # Prompt User for a number
+from itertools import product
 
 number = int(input("Enter a number to see its multiplication table: "))
 
-X = number
-print(X)
+# X = number
+print(number)
 #Generate and Print the Multiplication Table:
-for Y in range(1,11):
-    print(Y)
-    Z = X * Y
+for iterator in range(1,11):
+    print(iterator)
+    # Z = X * Y
+    product = number * iterator
 # Multiplication Table Output
-    print(f"{X} * {Y} = {Z}")
+    print(f"{number} * {iterator} = {product}")
