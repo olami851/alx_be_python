@@ -33,7 +33,8 @@ def main():
     shopping_list = []
     while True:
         display_menu()
-        choice = input("Choose an option (1-4): ").strip()
+        choice = input("Enter your choice: ")
+
         if choice == '1':
             add_item(shopping_list)
         elif choice == '2':
@@ -41,10 +42,11 @@ def main():
         elif choice == '3':
             view_list(shopping_list)
         elif choice == '4':
-            print("Exit the shopping list manager")
+            print("Goodbye!")
             break
         else:
-            print("Invalid choice ensure choice is between (1-4)")
+            print("Invalid choice. Please try again.")
+
 if __name__ == '__main__':
     main()
 
